@@ -1,0 +1,142 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    width: 100vw;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.ball-top {
+    position: absolute;
+    height: 600px;
+    top: -55%;
+    left: -95%;
+}
+
+.ball-bottom {
+    position: absolute;
+    height: 600px;
+    bottom: -42%;
+    right: -105%;
+}
+
+.profile {
+    width: 320px;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.background-photo {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 150px;
+    width: 320px;
+    border-radius: 20px 20px 0 0;    
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    top: 24%;
+}
+
+.profile-photo-img {
+    border-radius: 50px;
+}
+
+.profile-name {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    letter-spacing: 1px;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+
+.location {
+    margin: 10px 0 30px 0 ;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5px;
+}
+
+.profile-information {
+    flex-direction: column;
+    width: 359.46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    border-bottom: .2px solid hsl(0, 9%, 85%);
+    
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.stat {
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 2px;
+}
+
+span.age {
+    font-size: 18px;
+    margin-right: 5px; 
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 740px) {
+    .ball-bottom {
+        bottom: -70%;
+        right: -10%;
+        height: 845px;;
+    }
+
+    .ball-top {
+        top: -70%;
+        left: -10%;
+        height: 845px;;
+    }
+}
